@@ -3,12 +3,12 @@
 	<div class="container-fluid">
 		<h1 class="mt-4"></h1>
 		<ol class="breadcrumb mb-4">
-			<li class="breadcrumb-item"><a href="<?php echo site_url('admin/imam') ?>">List Imam</a></li>
+			<li class="breadcrumb-item"><a href="<?php echo site_url('admin/imam') ?>">Penduduk</a></li>
 			<li class="breadcrumb-item active"><?php echo $title ?></li>
 		</ol>
 		<div class="card mb-4">
 			<div class="card-header">
-				<a href="<?php echo site_url('admin/imam/add') ?>"><i class="fas fa-plus"></i> Add New</a>
+				<a href="<?php echo site_url('admin/penduduk/add') ?>"><i class="fas fa-plus"></i> Add New</a>
 			</div>
 			<?php if ($this->session->flashdata('success')): ?>
 			<div class="alert alert-success" role="alert">
@@ -21,31 +21,39 @@
 				<thead>
 					<tr>
 						<th>No.</th>
+						<th>NIK</th>
 						<th>Name</th>
-						<th>Alamat</th>
-						<th>Kecamatan</th>
-						<th>Kabupaten</th>
-						<th>Provinsi</th>
-						<th>Tanggal Pelaksanaan</th>																			
+						<th>Phone</th>
+						<th>Email</th>
+						<th>Gender</th>
+						<th>Birth</th>
+						<th>Home Number</th>
+						<th>Address</th>
+						<th>Religion</th>
+						<th>Profesi</th>																								
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>								
 					<?php
 					$no =1;
-						foreach ($imam as $user) {
+						foreach ($penduduk as $user) {
 					echo "<tr>
 							<td>$no</td>
+							<td>$user->nik</td>
 							<td>$user->name</td>
-							<td>$user->address</td>
-							<td>$user->kecamatan</td>		
-							<td>$user->kabupaten</td>
-							<td>$user->provinsi</td>
-							<td>$user->tanggal</td>																					
+							<td>$user->phone</td>		
+							<td>$user->email</td>
+							<td>$user->gender</td>
+							<td>$user->birth</td>		
+							<td>$user->home_number</td>		
+							<td>$user->address</td>		
+							<td>$user->agama</td>	
+							<td>$user->profesi</td>														
 							<td>
 							<div>
-							<a href=".base_url('admin/kegiatan/getedit/' . $user->id)." class='btn btn-sm btn-info'><i class='fas fa-edit'></i> Edit</a>
-							<a href=".base_url('admin/kegiatan/delete/' . $user->id)." class='btn btn-sm btn-danger'
+							<a href=".base_url('admin/penduduk/getedit/' . $user->id)." class='btn btn-sm btn-info'><i class='fas fa-edit'></i> Edit</a>
+							<a href=".base_url('admin/penduduk/delete/' . $user->id)." class='btn btn-sm btn-danger'
 							onclick='return confirm(\"Ingin mengapus data user ini?\");'><i class='fas fa-trash'></i> Hapus</a>
 							</div>
 							</td>

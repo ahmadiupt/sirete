@@ -16,7 +16,7 @@ class Imam extends CI_Controller {
 		$data = array(
 			'title' => 'View Data Imam',
             'userlog'=> infoLogin(),
-			'kegiatan' => $this->Imam_model->getAll(),
+			'imam' => $this->Imam_model->getAll(),
 			'content'=> 'admin/imam/index'
 		);
 		$this->load->view('admin/template/main',$data); 

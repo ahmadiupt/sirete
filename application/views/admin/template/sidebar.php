@@ -17,7 +17,7 @@
                             <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?php echo site_url('admin/user');?>">User</a>
-                                    <a class="nav-link" href="<?php echo site_url('admin/surat_masuk');?>">Penduduk</a>
+                                    <a class="nav-link" href="<?php echo site_url('admin/penduduk');?>">Penduduk</a>
                                     <a class="nav-link" href="<?php echo site_url('admin/kegiatan');?>">Kegiatan</a>
                                     <a class="nav-link" href="<?php echo site_url('admin/imam');?>">List Imam</a>
                                     <a class="nav-link" href="#">Kematian</a>
@@ -49,8 +49,8 @@
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
-                        <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        <div class="small">Logged in as : <?php echo $userlog['role']?></div>
+                        Sistem Informasi Kematian
                     </div>
                 </nav>
             </div>
