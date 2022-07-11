@@ -21,14 +21,16 @@
 				<label for="full_name">FULL NAME <code>*</code></label>
 				<input class="form-control" type="text" name="full_name" placeholder="FULL NAME" required />				
 			</div>
-			<div class="mb-3">
-				<label for="phone">PHONE</label>
-				<input class="form-control" type="number" name="phone" placeholder="PHONE" required/>				
-			</div>	
-			<div class="mb-3">
-				<label for="email">EMAIL</label>
-				<input class="form-control" type="text" name="email" placeholder="EMAIL" required/>				
-			</div>						
+			<div class="row mb-3">
+				<div class="col md-6">
+					<label for="phone">PHONE</label>
+					<input class="form-control" type="number" name="phone" placeholder="PHONE" required/>				
+				</div>	
+				<div class="col md-6">
+					<label for="email">EMAIL</label>
+					<input class="form-control" type="text" name="email" placeholder="EMAIL" required/>				
+				</div>			
+			</div>
 			<div class="mb-3">
 				<label class="control-label col-md-3 col-sm-3 col-xs-12">PASSWORD</label>
 				<input type="password" class="form-control" id="password" name="password" autocomplete="off" placeholder="PASSWORD" required>
@@ -40,7 +42,7 @@
 					<option selected>Choose...</option>
 					<option value="admin">ADMIN</option>
 					<option value="sekretaris">SEKRETARIS</option>
-				</select>				
+					</select>				
 			</div>
 			<button class="btn btn-primary" type="submit"><i class="fas fa-plus"></i> Save</button>
 		</form>

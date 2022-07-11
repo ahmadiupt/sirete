@@ -8,6 +8,7 @@
         <meta name="author" content="" />
         <title>Static Navigation - SB Admin</title>
         <link href="<?= base_url('assets/css/styles.css')?>" rel="stylesheet" />
+        <!-- <link href="<?= base_url('assets/js/all.min.css')?>" rel="stylesheet" /> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     </head>
     <body>

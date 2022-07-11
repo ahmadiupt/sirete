@@ -3,12 +3,12 @@
                 <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
                     <div class="sb-sidenav-menu">
                         <div class="nav">
-                            <div class="sb-sidenav-menu-heading">Core</div>
+                            <div class="sb-sidenav-menu-heading">MENU UTAMA</div>
                             <a class="nav-link" href="<?php echo site_url('admin/menu');?>">
-                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                                Dashboard
+                                <div class="sb-nav-link-icon"><i class="fa fa-home"></i></div>
+                                Beranda
                             </a>
-                            <div class="sb-sidenav-menu-heading">Interface</div>
+                            <div class="sb-sidenav-menu-heading">KELOLA DATA</div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
                                 <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                                 Master Data
@@ -18,15 +18,27 @@
                                 <nav class="sb-sidenav-menu-nested nav">
                                     <a class="nav-link" href="<?php echo site_url('admin/user');?>">User</a>
                                     <a class="nav-link" href="<?php echo site_url('admin/penduduk');?>">Penduduk</a>
+                                    <a class="nav-link" href="<?php echo site_url('admin/keluarga');?>">Kartu Keluarga</a>
                                     <a class="nav-link" href="<?php echo site_url('admin/kegiatan');?>">Kegiatan</a>
                                     <a class="nav-link" href="<?php echo site_url('admin/imam');?>">List Imam</a>
-                                    <a class="nav-link" href="#">Kematian</a>
+                                    <a class="nav-link" href="<?php echo site_url('admin/kematian');?>">Kematian</a>
                                     <a class="nav-link" href="#">Iuran Warga</a>
 									<!-- <a class="nav-link" href="<?php echo site_url('admin/surat_keluar');?>">Surat Keluar</a>
 									<a class="nav-link" href="<?php echo site_url('admin/disposisi');?>">Disposisi</a> -->
                                 </nav>
                             </div>
                             <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                Setting
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="<?php echo site_url('admin/profil');?>">Profile</a>
+                                    <a class="nav-link" href="<?php echo site_url('login/logout');?>">logout</a>
+                                </nav>
+                            </div>
+                            <!-- <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
                                 <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
                                 Setting
                                 <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
@@ -45,7 +57,8 @@
                                         </nav>
                                     </div>                                    
                                 </nav>
-                            </div>
+                            </div> -->
+                            <div class="sb-sidenav-menu-heading">LAINNYA</div>
                         </div>
                     </div>
                     <div class="sb-sidenav-footer">
